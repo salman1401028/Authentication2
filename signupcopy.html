@@ -1,0 +1,368 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        .registration-form {
+            width: 82%;
+            border: 2px solid;
+            padding: 25px;
+            margin: 10% auto;
+            border-radius: 10px;
+            background-color: #e9ecef;
+            /*background-color: antiquewhite;*/
+        }
+    </style>
+</head>
+
+<body style="background-color: grey">
+    <!--NAVBAR-->
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Student portal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign-up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <h1 style="text-align: center;">Registration form</h1>
+        <div class="container">
+            <div class="registration-form">
+                <h6 class="display-6 mb-3" style="text-align:center"><u>Please register below</u></h6>
+                <form class="row g-3 needs-validation" novalidate>
+                    <!--we can add attribute autocomplete="off", if we do not want suggestions in input field.-->
+                    <div class="col-md-4">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName" required>
+                        <div class="valid-feedback" id="firstNameValid">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback" id="firstNameInvalid">
+                            Please enter a valid first name.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName" required>
+                        <div class="valid-feedback" id="lastNameValid">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback" id="lastNameInvalid">
+                            Please enter a valid last name.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend"
+                                required>
+                            <div class="valid-feedback" id="emailValid">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback" id="emailInvalid">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="phoneNumber" class="form-label">Phone Number (IN +91)</label>
+                        <input type="number" class="form-control" id="phoneNumber" required>
+                        <div class="valid-feedback" id="phoneNumberValid">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback" id="phoneNumberInvalid">
+                            Please provide a valid phone number.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="state" class="form-label">State</label>
+                        <select class="form-select" id="state" required>
+                            <option selected disabled value="">Choose...</option>
+
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                            <option value="Daman and Diu">Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Puducherry">Puducherry</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                            </option>
+                        </select>
+                        <div class="valid-feedback" id="stateValid">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback" id="stateInvalid">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="zipCode" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="zipCode" required>
+                        <div class="valid-feedback" id="zipCodeValid">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback" id="zipCodeInvalid">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="email" class="form-label">Password</label>
+                        <div class="input-group has-validation">
+
+                            <input class="textSize form-control" type="password" id="signup-password"
+                                placeholder="Create your password" onkeyup="passwordStrength()"><br>
+                            <p id="weak">password strength: Weak.</p>
+                            <p id="medium">password strength: Medium.</p>
+                            <p id="strong">password strength: Strong.</p>
+                            <p id="validation">**Enter atleast 8 character and must include combination of character and
+                                numeric values.</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="tNCCheckBox" required>
+                            <label class="form-check-label" for="tNCCheckBox">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback" id="tncInvalid">
+                                You must agree before submitting.
+                            </div>
+                            <div class="valid-feedback" id="tncValid">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-dark" type="button" onclick="validate()">Submit form</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+
+        <script>
+            let firstNameValid = document.getElementById("firstNameValid");
+            let firstNameInvalid = document.getElementById("firstNameInvalid");
+            let lastNameValid = document.getElementById("lastNameValid");
+            let lastNameInvalid = document.getElementById("lastNameInvalid");
+            let emailValid = document.getElementById("emailValid");
+            let emailInvalid = document.getElementById("emailInvalid");
+            let phoneValid = document.getElementById("phoneValid");
+            let phoneInvalid = document.getElementById("phoneInvalid");
+            let zipCodeValid = document.getElementById("zipCodeValid");
+            let zipCodeInvalid = document.getElementById("zipCodeInvalid");
+            let tncValid = document.getElementById("tncValid");
+            let tncInvalid = document.getElementById("tncInvalid");
+            let stateValid = document.getElementById("stateValid");
+            let stateInvalid = document.getElementById("stateInvalid");
+            let passwordValid = document.getElementById("passwordValid");
+            let passwordInvalid = document.getElementById("passwordInvalid");
+
+
+            function validate() {
+                let firstName = document.getElementById("firstName").value;
+                let lastName = document.getElementById("lastName").value;
+                let email = document.getElementById("email").value;
+                let phoneNumber = document.getElementById("phoneNumber").value;
+                let state = document.getElementById("state").value;
+                let zipCode = document.getElementById("zipCode").value;
+                let password= document.getElementById("signup-password").value;
+                let tNCCheckBox = document.getElementById("tNCCheckBox").checked;
+
+
+
+                // FOR LOCAL STORAGE  ******************************************************************
+                var user = {
+                    firstName: document.getElementById("firstName").value,
+                    lastName: document.getElementById("lastName").value,
+                    email: document.getElementById("email").value,
+                    phoneNumber: document.getElementById("phoneNumber").value,
+                    state: document.getElementById("state").value,
+                    zipCode: document.getElementById("zipCode").value,
+                    password: document.getElementById("signup-password").value,
+                    tNCCheckBox: document.getElementById("tNCCheckBox").checked
+                };
+
+                let json = JSON.stringify(user);
+                localStorage.setItem(email, json);
+                console.log('user added');
+
+
+                /* localStorage.setItem('ls_firstName', firstName);
+                 localStorage.setItem('ls_lastName', lastName);
+                 localStorage.setItem('ls_email', email);
+                 localStorage.setItem('ls_phoneNumber', phoneNumber);
+                 localStorage.setItem('ls_state', state);
+                 localStorage.setItem('ls_zipCode', zipCode);
+                 //localStorage.setItem('ls_date_of_birth', tNCCheckBox);*/
+
+                //**************************************************************************************
+
+                if (firstName === '') {
+                    firstNameInvalid.style.display = 'block';
+                    firstNameValid.style.display = 'none';
+                    firstNamecheck = false;
+                }
+                else {
+                    firstNameInvalid.style.display = 'none';
+                    firstNameValid.style.display = 'block';
+                    firstNamecheck = true;
+                }
+
+
+                if (lastName === '') {
+                    lastNameInvalid.style.display = 'block';
+                    lastNameValid.style.display = 'none';
+                    lastNamecheck = false;
+                }
+                else {
+                    lastNameInvalid.style.display = 'none';
+                    lastNameValid.style.display = 'block';
+                    lastNamecheck = true;
+                }
+
+                if (email === '' || !email.includes('@') || email.startsWith('@') || email.slice(email.lastIndexOf('.')).length < 3) {
+                    emailInvalid.style.display = 'block';
+                    emailValid.style.display = 'none';
+                    emailcheck = false;
+                }
+                else {
+                    emailInvalid.style.display = 'none';
+                    emailValid.style.display = 'block';
+                    emailcheck = true;
+                }
+                if (phoneNumber === '' || phoneNumber.length != 10 || Number(phoneNumber[0]) < 7) {  //to control only the entry of number and not characters or special character we can do that on HTML by type=number.
+                    phoneNumberInvalid.style.display = 'block';
+                    phoneNumberValid.style.display = 'none';
+                    phoneNumbercheck = false;
+                }
+                else {
+                    phoneNumberInvalid.style.display = 'none';
+                    phoneNumberValid.style.display = 'block';
+                    phoneNumbercheck = true;
+                }
+                if (zipCode === '' || zipCode.length != 6) {
+                    zipCodeInvalid.style.display = 'block';
+                    zipCodeValid.style.display = 'none';
+                    zipCodecheck = false;
+                }
+                else {
+                    zipCodeInvalid.style.display = 'none';
+                    zipCodeValid.style.display = 'block';
+                    zipCodecheck = true;
+                }
+
+                if (state === '') {
+                    stateInvalid.style.display = 'block';
+                    stateValid.style.display = 'none';
+                    statecheck = false;
+                }
+                else {
+                    stateValid.style.display = 'block';
+                    stateInvalid.style.display = 'none';
+                    statecheck = true;
+                }
+
+                if (!tNCCheckBox) {
+                    tncInvalid.style.display = 'block';
+                    tncValid.style.display = 'none';
+                    tNCCheckBoxcheck = false;
+                }
+                else {
+                    tncInvalid.style.display = 'none';
+                    tncValid.style.display = 'block';
+                    tNCCheckBoxcheck = true;
+                }
+                /*if("firstNamecheck===true && lastNamecheck==true && emailcheck==true && phoneNumbercheck==true && zipCodecheck==true && statecheck==true && tNCCheckBoxcheck==true"){
+                    console.log("Registration successfull");
+                }
+                else{   
+                   console.log("Please recheck your form");
+                } */
+                if (phoneNumbercheck && zipCodecheck && firstNamecheck && lastNamecheck && emailcheck && statecheck && tNCCheckBoxcheck) {
+                    //console.log("yes success");
+                    window.location = 'signupSuccess.html';
+                }
+                else {
+                    console.log("no success");
+                }
+
+
+            }
+        </script>
+</body>
+
+</html>
